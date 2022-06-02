@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.DEBUG)
     muestra mensajes de 20 a superiores
 """
 
-logging.basicConfig(level = logging.DEBUG)
+logging.basicConfig(level = logging.INFO)
 
 """     Sin usar DOCSTRINGS
 if __name__ == '__main__':
@@ -25,14 +25,28 @@ if __name__ == '__main__':
     logging.debug('>>> Finalizada la ejecución del paquete')
 """
 
-#Usando DOSCTRINGS
+"""Usando DOSCTRINGS
 if __name__ == '__main__':
     logging.debug('>>>  Ejecución del paquete iniciada')
     
-    workshops = unreleased()   
+    workshops = unreleased()
 
     logging.debug(unreleased())
     #logging.debug(unreleased.__doc__)  En vez de ver los workshops
     #logging.debug(help(unreleased))    Es otra forma de hacerlo
+
+    logging.debug('>>> Finalizada la ejecución del paquete')
+"""
+
+#usando entry_points
+
+def main():
+    logging.info(unreleased())
+
+
+if __name__ == '__main__':
+    logging.debug('>>>  Ejecución del paquete iniciada')
+
+    main()
 
     logging.debug('>>> Finalizada la ejecución del paquete')
