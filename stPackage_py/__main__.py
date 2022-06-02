@@ -15,11 +15,22 @@ logging.basicConfig(level=logging.DEBUG)
 
 logging.basicConfig(level = logging.DEBUG)
 
-
+"""     Sin usar DOCSTRINGS
 if __name__ == '__main__':
     logging.debug('>>>  Ejecución del paquete iniciada')
     
     workshops = unreleased()
     print(workshops)
+
+    logging.debug('>>> Finalizada la ejecución del paquete')
+"""
+
+#Usando DOSCTRINGS
+if __name__ == '__main__':
+    logging.debug('>>>  Ejecución del paquete iniciada')
+    
+    #workshops = unreleased()   En vez de ver los workshops
+    logging.debug(unreleased.__doc__)
+    #logging.debug(help(unreleased))    Es otra forma de hacerlo
 
     logging.debug('>>> Finalizada la ejecución del paquete')
