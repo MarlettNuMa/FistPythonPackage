@@ -15,7 +15,7 @@ setup(
     name = PACKAGE_NAME,
     packages = [PACKAGE_NAME],
     entry_points = {
-        "cons_points":
+        "console_scripts":
         ["pystPackage_py = stPackage_py.__main__:main"]
     },
     version = VERSION,
