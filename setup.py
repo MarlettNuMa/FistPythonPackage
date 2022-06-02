@@ -4,7 +4,7 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.2'
+VERSION = '0.0.4'
 DESCRIPTION = 'Este paqeute permite consumir el API de CódigoFacilito'
 PACKAGE_NAME = 'stPackage_py'
 AUTHOR = 'Marlett Núñez'
