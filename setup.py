@@ -17,7 +17,7 @@ setup(
     entry_points = {
         "cons_points":
         ["pystPackage_py = stPackage_py.__main__:main"]
-    }
+    },
     version = VERSION,
     license='MIT',
     description = DESCRIPTION,
