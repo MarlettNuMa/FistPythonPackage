@@ -29,8 +29,10 @@ if __name__ == '__main__':
 if __name__ == '__main__':
     logging.debug('>>>  Ejecución del paquete iniciada')
     
-    #workshops = unreleased()   En vez de ver los workshops
-    logging.debug(unreleased.__doc__)
+    workshops = unreleased()   
+
+    logging.debug(unreleased())
+    #logging.debug(unreleased.__doc__)  En vez de ver los workshops
     #logging.debug(help(unreleased))    Es otra forma de hacerlo
 
     logging.debug('>>> Finalizada la ejecución del paquete')
